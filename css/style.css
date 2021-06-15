@@ -1,0 +1,43 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --principal:#ffffc7;
+    --secudario:#233e8b;
+    --verde:#a9f1df;
+    --verdeAgua:#1eae98;
+    --fuentePpal:'Baloo Tammudu 2', cursive;
+}
+
+body{
+    font-family: var(--fuentePpal);
+    font-size: 1.6rem;
+}
+img{width: 100%;}
+h1{
+    font-size: 4rem;
+    color: var(--secudario);
+}
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-bog{
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--verdeAgua);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
